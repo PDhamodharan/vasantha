@@ -1,0 +1,23 @@
+**For MIGRATION**
+git clone https://github.com/frappe/bench bench-repo
+sudo pip install -e bench-repo
+
+Step 1: Update bench-repo
+
+As the frappe user,
+
+cd ~/bench-repo
+git pull
+
+Step 2: Switch branch
+
+cd ~/frappe-bench
+bench update --upgrade
+
+This will take time.
+Step 3: Restart services
+
+If you've setup for production, run
+
+service nginx restart
+supervisorctl reload

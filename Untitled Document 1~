@@ -1,0 +1,35 @@
+dhamu@dhamu-H81M-S:~$ sudo bash setup_frappe.sh --setup-production
+[sudo] password for dhamu: 
+Sorry, try again.
+[sudo] password for dhamu: 
+Installing for Ubuntu trusty amd64
+In case you encounter an error, you can post on https://discuss.frappe.io
+
+Adding ubuntu mariadb repo
+Reading package lists...
+Building dependency tree...
+Reading state information...
+software-properties-common is already the newest version.
+python-software-properties is already the newest version.
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.16.0-30 linux-headers-3.16.0-30-generic
+  linux-headers-3.16.0-44 linux-headers-3.16.0-44-generic
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Setting up mysql-server-5.5 (5.5.46-0ubuntu0.14.04.2) ...
+chown: invalid user: ‘mysql’
+chown: invalid user: ‘mysql’
+chown: invalid user: ‘mysql:adm’
+chown: invalid user: ‘mysql:adm’
+chown: invalid user: ‘mysql:adm’
+start: Job failed to start
+invoke-rc.d: initscript mysql, action "start" failed.
+dpkg: error processing package mysql-server-5.5 (--configure):
+ subprocess installed post-installation script returned error exit status 1
+Errors were encountered while processing:
+ mysql-server-5.5
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+dhamu@dhamu-H81M-S:~$ 
+
